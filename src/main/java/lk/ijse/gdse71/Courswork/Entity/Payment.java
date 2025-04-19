@@ -1,21 +1,23 @@
-package lk.ijse.gdse71.Courswork.Entity;
+package lk.ijse.project.mentalHealthTherapyCenter.entity;
+
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
-@Table(name = "PAYMENT")
-public class Payment {
+@Table(name = "payment")
+public class Payment implements SuperEntity {
     @Id
-    @Column(name = "Invoic-ID")
-    private String invoicID;
-    private String payment_Date;
+    private  String paymentID;
+    private  String patientName;
+    private  Double paymentAmount;
+    private  String paymentMethod;
+    private  String paymentDate;
+    private  String paymentTime;
 
-    @ManyToOne
-    @JoinColumn(name = "patient_id")
-    private Patient patient;
+    @OneToOne(mappedBy = "payment",cascade = CascadeType.ALL)
+    private lk.ijse.project.mentalHealthTherapyCenter.entity.Appointments appointments;
+
 }

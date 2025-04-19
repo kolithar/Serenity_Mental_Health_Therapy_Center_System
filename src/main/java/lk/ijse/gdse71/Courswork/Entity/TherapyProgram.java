@@ -26,5 +26,5 @@ public class TherapyProgram {
     private Therapist therapist;
 
     @OneToMany(mappedBy = "program", cascade = CascadeType.ALL)
-    private List<Enrolment> enrolments;
+    private List<Appointments> enrolments;
 }
