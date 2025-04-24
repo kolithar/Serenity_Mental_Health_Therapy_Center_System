@@ -28,7 +28,7 @@ public class Payement {
         private String medical_history;
 
         @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-        private List<Therapysession> therapySessions;
+        private List<Therapysession> therapySessions; //hellooooo
 
 
 
