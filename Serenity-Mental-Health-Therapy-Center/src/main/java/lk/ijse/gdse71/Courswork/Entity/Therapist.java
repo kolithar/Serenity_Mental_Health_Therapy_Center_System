@@ -19,5 +19,6 @@ public class Therapist {
     private String therapistName;
     private String spazy;
     private String contach;
+    private String medical_history;
 
 } 
