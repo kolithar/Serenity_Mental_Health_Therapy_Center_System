@@ -30,7 +30,7 @@ public class Payement {
         @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
         private List<Therapysession> therapySessions; //hellooooo
 
-
+// this clone
 
     }
 
