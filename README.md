@@ -1,7 +1,9 @@
 serenity_health-therapy_center
+
 A desktop-based application built with JavaFX for the user interface, Hibernate ORM for database interactions, and MySQL for data storage. The application follows a Layered Architecture to ensure modularity, scalability, and maintainability.
 
 🏗️ Architecture
+
 The project is structured using a layered architecture:
 
 Presentation Layer (UI): JavaFX views and controllers.
