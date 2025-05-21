@@ -217,6 +217,8 @@ public class TherapistController  implements Initializable {
                 DocPhone,
                 DocMail
         );
+
+
         boolean isSaved = therapistBO.updateTherapist(doctorDTO);
         if (isSaved) {
             refreshPage();
