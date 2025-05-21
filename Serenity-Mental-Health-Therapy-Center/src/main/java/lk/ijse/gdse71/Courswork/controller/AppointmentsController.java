@@ -170,6 +170,7 @@ public class AppointmentsController implements Initializable {
         }
     }
 
+
     private final DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 

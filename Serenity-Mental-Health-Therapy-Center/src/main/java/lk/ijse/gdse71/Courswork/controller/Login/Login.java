@@ -24,6 +24,7 @@ public class Login implements Initializable {
         Image userImage = new Image(getClass().getResourceAsStream("/images/LoginUserPic.png"));
         user.setImage(userImage);
 
+
         Image image = new Image(getClass().getResourceAsStream("/images/bgPIc.jpg"));
         imageBG.setImage(image);
         imageBG.setId("bgImage");/*Adding an id to Remove css */

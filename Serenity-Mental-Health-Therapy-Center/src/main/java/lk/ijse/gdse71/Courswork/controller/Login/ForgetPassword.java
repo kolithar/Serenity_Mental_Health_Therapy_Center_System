@@ -68,6 +68,8 @@ public class ForgetPassword implements Initializable {
 
     @FXML
     void changeAction(ActionEvent event) {
+
+
         String UserName = userName.getText();
         String PassWord = passWordText.getText();
         String ConfirmPassword = confirmPassword.getText();
