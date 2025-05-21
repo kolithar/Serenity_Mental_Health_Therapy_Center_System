@@ -71,16 +71,18 @@ public class PayementController implements Initializable {
         List<PaymentDTO> paymentDTOS =  paymentBO.getALL();
         ObservableList<PaymentTM> paymentTMS = FXCollections.observableArrayList();
 
+
+
         for (PaymentDTO paymentDTO : paymentDTOS) {
-           PaymentTM paymentTM = new PaymentTM(
-                   paymentDTO.getPaymentID(),
-                   paymentDTO.getPatientName(),
-                   paymentDTO.getPaymentAmount(),
-                   paymentDTO.getPaymentMethod(),
-                   paymentDTO.getPaymentDate(),
-                   paymentDTO.getPaymentTime()
-           );
-           paymentTMS.add(paymentTM);
+            PaymentTM paymentTM = new PaymentTM(
+                    paymentDTO.getPaymentID(),
+                    paymentDTO.getPatientName(),
+                    paymentDTO.getPaymentAmount(),
+                    paymentDTO.getPaymentMethod(),
+                    paymentDTO.getPaymentDate(),
+                    paymentDTO.getPaymentTime()
+            );
+            paymentTMS.add(paymentTM);
         }
         table.setItems(paymentTMS);
     }
