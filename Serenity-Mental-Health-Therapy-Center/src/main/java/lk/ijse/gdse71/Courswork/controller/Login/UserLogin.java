@@ -75,6 +75,7 @@ public class UserLogin implements Initializable {
         boolean userFromDB = userBO.findUser(username);
         String passFromDB = userBO.findPassWord(username,role1);
 
+
         if (userFromDB && PasswordUtil.matches(password, passFromDB)) {
             SessionHolder.userName = username;
             navigateToMainPage("/view/MainLayout.fxml", "user", username);
@@ -82,6 +83,7 @@ public class UserLogin implements Initializable {
             new Alert(Alert.AlertType.ERROR, "Login Failed..", ButtonType.OK).show();
         }
     }
+
 
     @FXML
     void showPasswordcheckBox(ActionEvent event) {
