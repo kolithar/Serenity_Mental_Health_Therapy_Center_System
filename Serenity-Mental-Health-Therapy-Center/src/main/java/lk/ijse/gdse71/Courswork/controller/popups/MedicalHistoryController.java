@@ -78,6 +78,9 @@ public class MedicalHistoryController implements Initializable {
         ObservableList<MedicalHistoryTM> medicalHistoryTMS = FXCollections.observableArrayList();
         for (MedicalHistoryDTO medicalHistoryDTO : medicalHistoryDTOS) {
 
+
+
+
             MedicalHistoryTM medicalHistoryTM = new MedicalHistoryTM(
                     medicalHistoryDTO.getPatientID(),
                     medicalHistoryDTO.getPatientName(),
